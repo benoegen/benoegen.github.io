@@ -2,12 +2,12 @@
 layout: default
 title: Home
 ---
-<ul class="flextainer">
+<div class="flextainer">
   {% for post in site.posts %}
-    <li>
+    <div class="front-article">
       <h2><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h2>
       {{ post.excerpt }}
       <p>{{ post.date | date_to_string }} - {{ post.author }}</p>
-    </li>
+    </div>
   {% endfor %}
-</ul>
+  </div>
