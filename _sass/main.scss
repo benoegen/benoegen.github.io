@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+body { overflow-y: scroll; }
+
 .current {
     color: grey !important;
   }
@@ -11,9 +13,9 @@
 .logotainer{
   display: flex;
   flex-wrap: wrap;
-  max-width: 70rem;
-  margin: auto;
-  padding-left: 2rem;
+  max-width: 75rem;
+  margin: auto auto 3rem;
+  padding-left: 0.5rem;
   padding-top: 2rem;
   align-items: flex-end;
 }
@@ -33,8 +35,20 @@
   padding-top: 2rem;
 }
 
+.tag-article{
+  margin: auto;
+  padding-left: 4rem;
+  max-width: 76rem;
+  padding-top: 2rem;
+}
+
+.tag-article ul{
+  max-width: 50rem;
+}
+
 .front-article{
   padding-left: 4rem;
+  width: 35rem;
 }
 
 h1{
@@ -57,7 +71,7 @@ h2{
 a.website-title{
   text-decoration: none;
   color: black;
-  padding-left: 5rem;
+  padding-left: 1rem;
   font-family: 'Playfair Display';
   font-size: 3rem;
   font-weight: 700; 
