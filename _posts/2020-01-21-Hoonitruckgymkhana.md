@@ -3,4 +3,4 @@ title: Hoonitruck gymkhana
 author: benoegen
 tag: motorsport
 ---
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZX2uXBMkO8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/ZX2uXBMkO8U?rel=0"  frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
