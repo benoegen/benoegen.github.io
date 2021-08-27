@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 @media screen and (max-width: 800px){
   .front-article{padding-left: 0 !important};
 }
 
-body { overflow-y: scroll; }
+body {
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro';
+}
 
 .current {
     color: grey !important;
@@ -55,8 +59,6 @@ body { overflow-y: scroll; }
   width: 35rem;
 }
 
-<<<<<<< Updated upstream
-=======
 .front-article p{
   color: hsl(0, 0%, 38%);
 }
@@ -69,7 +71,6 @@ p.tags{
   color: #979797;
 }
 
->>>>>>> Stashed changes
 h1{
   font-family: 'Playfair Display';
   font-size: 3rem;
@@ -96,8 +97,6 @@ a.website-title{
   font-weight: 700; 
 }
 
-<<<<<<< Updated upstream
-=======
 a.taglist{
   text-decoration: none;
   color: #979797;
@@ -112,6 +111,7 @@ a.taglist:hover{
   text-decoration: none;
   color: #4d4b4b;
 }
+
 
 a.taglisttitle{
   text-decoration: none;
@@ -137,7 +137,7 @@ a.taglisttitle:hover{
   font-weight: 700;
 }
 
->>>>>>> Stashed changes
+
 nav{
   flex-grow: 3;
   text-align: right;
@@ -167,6 +167,7 @@ nav a:hover{
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+  border-style: none;
 }
 
 .video-container iframe,
@@ -177,4 +178,5 @@ nav a:hover{
   left: 0;
   width: 100%;
   height: 100%;
+  border-style: none;
 }
