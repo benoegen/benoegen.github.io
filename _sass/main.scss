@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 @media screen and (max-width: 800px){
   .front-article{padding-left: 0 !important};
 }
 
-body { overflow-y: scroll; }
+body {
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro';
+}
 
 .current {
     color: grey !important;
@@ -55,6 +59,14 @@ body { overflow-y: scroll; }
   width: 35rem;
 }
 
+.front-article p{
+  color: hsl(0, 0%, 38%);
+}
+
+p.tags{
+  color: #979797;
+}
+
 h1{
   font-family: 'Playfair Display';
   font-size: 3rem;
@@ -79,6 +91,21 @@ a.website-title{
   font-family: 'Playfair Display';
   font-size: 3rem;
   font-weight: 700; 
+}
+
+a.taglist{
+  text-decoration: none;
+  color: #979797;
+}
+
+a.taglist:visited{
+  text-decoration: none;
+  color: #979797;
+}
+
+a.taglist:hover{
+  text-decoration: none;
+  color: #4d4b4b;
 }
 
 nav{
@@ -110,6 +137,7 @@ nav a:hover{
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+  border-style: none;
 }
 
 .video-container iframe,
@@ -120,4 +148,5 @@ nav a:hover{
   left: 0;
   width: 100%;
   height: 100%;
+  border-style: none;
 }
