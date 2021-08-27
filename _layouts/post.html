@@ -4,6 +4,10 @@ layout: default
 
 <div class="single-article">
 <h2>{{ page.title }}</h2>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<p>{{ page.date | date_to_string }} - {{ page.author }}</p>  
 {{ content }}
+<p class="tags">Tags: {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}" class="taglist">{{ tag_name }}</a>
+  {% endfor %}</p>
 </div>
