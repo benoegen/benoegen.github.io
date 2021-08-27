@@ -3,11 +3,9 @@ layout: default
 ---
 <div class="tag-article">
 <h2>Tag: {{ page.tag }}</h1>
-<ul>
 {% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}" class="taglisttitle">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+  <div><a href="{{ post.url }}" class="taglisttitle">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     {{ post.excerpt }}
-  </li>
+</div>
 {% endfor %}
-</ul>
 </div>
