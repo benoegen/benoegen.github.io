@@ -1,7 +1,7 @@
 ---
 author: benoegen
 title: Test vom Handy
-Tag: der_junge_benoegen
+tag: der_junge_benoegen
 ---
 Super super läuft das hier
 
