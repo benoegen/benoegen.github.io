@@ -55,6 +55,21 @@ body { overflow-y: scroll; }
   width: 35rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.front-article p{
+  color: hsl(0, 0%, 38%);
+}
+
+img.img-responsive{
+  width: 100%;
+}
+
+p.tags{
+  color: #979797;
+}
+
+>>>>>>> Stashed changes
 h1{
   font-family: 'Playfair Display';
   font-size: 3rem;
@@ -81,6 +96,48 @@ a.website-title{
   font-weight: 700; 
 }
 
+<<<<<<< Updated upstream
+=======
+a.taglist{
+  text-decoration: none;
+  color: #979797;
+}
+
+a.taglist:visited{
+  text-decoration: none;
+  color: #979797;
+}
+
+a.taglist:hover{
+  text-decoration: none;
+  color: #4d4b4b;
+}
+
+a.taglisttitle{
+  text-decoration: none;
+  color: black;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+a.taglisttitle:visited{
+  text-decoration: none;
+  color: black;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+a.taglisttitle:hover{
+  text-decoration: none;
+  color: #4d4b4b;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+>>>>>>> Stashed changes
 nav{
   flex-grow: 3;
   text-align: right;
