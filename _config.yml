@@ -5,3 +5,5 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+excerpt_separator: <!--mehr-->
