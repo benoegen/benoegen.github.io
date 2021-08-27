@@ -107,10 +107,9 @@ nav a:hover{
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 0;
+  width: 100%;
   height: 0;
-  overflow: hidden;
+  padding-bottom: 56.25%;
 }
 
 .video-container iframe,
