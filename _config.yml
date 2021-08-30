@@ -10,6 +10,7 @@ excerpt_separator: <!--mehr-->
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
   
 title: benoegen - locker flockig
 tagline: ein blog mit blick auf die eigenen fotos und videos aus dem ganzen web
