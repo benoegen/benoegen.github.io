@@ -1,1 +1,7 @@
-
+---
+author: benoegen
+title: Nizza
+tags: fotografie der_junge_benoegen
+---
+[![Nizza14](/assets/photos/nizza_14.jpg){:class="img-responsive"}](/assets/photos/nizza_14.jpg)
+Nizza 05.09.2014, fotografiert während dem Roadtrip mit dem T3, EOS60D mit Tamron 17-50 2.8
