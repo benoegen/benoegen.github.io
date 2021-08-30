@@ -11,3 +11,4 @@ excerpt_separator: <!--mehr-->
 plugins:
   - jekyll-seo-tag
   
+site.title: benoegen - locker flockig
