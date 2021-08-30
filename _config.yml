@@ -7,3 +7,7 @@ defaults:
       layout: "post"
 
 excerpt_separator: <!--mehr-->
+
+plugins:
+  - jekyll-seo-tag
+  
