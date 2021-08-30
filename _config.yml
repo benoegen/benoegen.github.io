@@ -11,4 +11,7 @@ excerpt_separator: <!--mehr-->
 plugins:
   - jekyll-seo-tag
   
-site.title: benoegen - locker flockig
+title: benoegen - locker flockig
+tagline: ein blog mit blick auf die eigenen fotos und videos aus dem ganzen web
+url: http://benoegen.de
+author: benoegen
