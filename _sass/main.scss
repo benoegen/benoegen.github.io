@@ -196,3 +196,26 @@ nav a:hover{
   height: 100%;
   border-style: none;
 }
+
+.pagination{
+  margin: auto;
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 1rem;
+}
+
+.pagination a{
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 1rem;
+}
+
+.pagination a:visited{
+  text-decoration: none;
+  color: #5c5c5c;
+}
+
+.pagination a:hover{
+  text-decoration: none;
+  color: #979797;
+}

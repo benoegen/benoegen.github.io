@@ -8,9 +8,13 @@ defaults:
 
 excerpt_separator: <!--mehr-->
 
+paginate: 10
+paginate_path: "/blog/page:num/"
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
   
 title: benoegen - not all those who wander are lost
 tagline: ein blog mit blick auf die eigenen fotos und videos aus dem ganzen web
