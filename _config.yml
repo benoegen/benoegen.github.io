@@ -11,7 +11,7 @@ excerpt_separator: <!--mehr-->
 paginate: 10
 paginate_path: "/blog/page:num/"
 
-staticman_url: https://api.staticman.net/v3/entry/github/[YOUR USERNAME]/[YOUR REPOSITORY]/master/comments
+staticman_url: https://api.staticman.net/v3/entry/github/benoegen/benoegen.github.io/master/comments
 
 
 plugins:
