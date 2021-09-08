@@ -5,7 +5,7 @@ tag: musik
 ---
 {% include youtube.html id="x9VYKrtziSg" %}
 
-Sama' Abdulhadi | Boiler Room Palestine
+Sama' Abdulhadi - Boiler Room Palestine
 
 Setlist:  
 7:30 Enrico Sangiuliano - Hidden T  
@@ -19,5 +19,8 @@ Setlist:
 46:40 DEAS - Velocity (Original Mix)  
 50:30 Maxime Miville - Don't Ask (Max Cooper Remix)  
 55:00 Âme - No War (Original Mix)  
+
+{% include soundcloud.html id="471226551" %}
+
 
 <!--mehr-->
