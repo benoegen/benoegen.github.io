@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: benoegen.de
+Token: a25fe0d847647fe8f65c1b235565d824c55f1e882f59b0f094440a6e43dc08f6
