@@ -15,6 +15,7 @@ layout: default
       {% endif %}
     </div>
   {% endfor %}
+</div>
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
@@ -22,18 +23,17 @@ layout: default
         zurück
       </a>
     {% else %}
-      <span class="previous">zurück</span>
+      <span class="previous"> </span>
     {% endif %}
-    <span class="page_number ">
-      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    <span class="page_number">
+      &nbsp;Seite: {{ paginator.page }} of {{ paginator.total_pages }}&nbsp;
     </span>
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}" class="next">weiter</a>
     {% else %}
-      <span class="next ">weiter</span>
+      <span class="next "> </span>
     {% endif %}
   </div>
-</div>
 
 
 
