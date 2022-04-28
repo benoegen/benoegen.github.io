@@ -106,10 +106,16 @@ body {
 
 .tag-article{
   margin: auto;
+  margin-bottom: 10rem;
   padding-left: 4rem;
   max-width: 55rem;
   padding-top: 2rem;
 }
+
+.tag-article-article{
+  margin-bottom: 5rem;
+}
+
 
 .front-article{
   padding-left: 4rem;
@@ -141,7 +147,7 @@ p.tags{
 
 h1{
   font-family: 'Playfair Display';
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;  
 }
 
@@ -151,9 +157,18 @@ h2{
   font-weight: 900;
 }
 
+h3{
+  font-family: 'Playfair Display';
+  font-weight: 700;
+}
+
 .post-title{
   text-decoration: none;
   color: black;
+}
+
+code{
+  background-color: #e6e6e6;
 }
 
 a.website-title{
