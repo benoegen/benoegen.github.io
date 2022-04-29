@@ -1,5 +1,5 @@
 ---
-title: Smarthome auf RaspberryPi Grundlagen
+title: Smarthome auf RaspberryPi: Die Grundlagen
 author: benoegen
 tag: it
 ---
