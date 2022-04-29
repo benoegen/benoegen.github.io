@@ -11,7 +11,7 @@ Benöhr, Matthias
 
 Kontaktaufnahme:
 
-E-Mail: m.benoehr+blog[at]gmail.com
+E-Mail: blog@benoegen.de
  
 
 Haftungsausschluss – Disclaimer:
