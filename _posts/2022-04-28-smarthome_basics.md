@@ -87,7 +87,6 @@ services:
       - portainer_data:/data
 
 volumes:
-  node-red-data:
   portainer_data:
 ```
 
