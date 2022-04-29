@@ -27,8 +27,10 @@ Der Hauptuser muss noch in die docker Gruppe eingefügt werden (*ubuntu* oder *p
 Docker-compose wird benötigt, um container komfortabel über ein composefile starten zu können. Installation über: `sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-aarch64" -o /usr/local/bin/docker-compose`
 (Die Version könnte inzwischen nicht mehr aktuell sein)
 
+`sudo chmod +x /usr/local/bin/docker-compose`
+
 Danach prüfen, ob compose korrekt installiert wurde:
-`sudo chmod +x /usr/local/bin/docker-compose` `docker-compose --version`
+`docker-compose --version`
 
 ### Samba
 
