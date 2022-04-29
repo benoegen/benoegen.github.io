@@ -171,6 +171,10 @@ code{
   background-color: #e6e6e6;
 }
 
+.highlighter-rouge{
+  background-color: #e6e6e6;
+}
+
 a.website-title{
   text-decoration: none;
   color: black;
@@ -290,6 +294,22 @@ nav a:hover{
 }
 
 .pagination a:hover{
+  text-decoration: underline;
+  color: #979797;
+}
+
+a.readmore {
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 1rem;
+}
+
+a.readmore:visited{
+  text-decoration: none;
+  color: #5c5c5c;
+}
+
+a.readmore:hover{
   text-decoration: underline;
   color: #979797;
 }
