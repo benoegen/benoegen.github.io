@@ -14,7 +14,7 @@ Die einzelnen Abschnitte sind dabei:
 
 ### Einsatzzweck von PiHole
 
-[![Käfer](/assets/screenshots/2022-05-04 09_13_19-Pi-hole.png){:class="img-responsive"}](/assets/photos/kaefer.jpg)
+[![Käfer](/assets/screenshots/2022-05-04 09_13_19-Pi-hole.png){:class="img-responsive"}](/assets/screenshots/2022-05-04 09_13_19-Pi-hole.png)
 
 PiHole blockiert Werbung/Tracking bereits auf DNS Ebene, so dass diese gar nicht erst geladen werden, das spart Bandbreite gegenüber Ad-Blockern im Browser o.ä. Dabei wird das ganze Netzwerk gefiltert, sei es Handy, Computer, Smart-TV oder oder. Dabei muss der Pi lediglich im Router als DNS Server angegeben werden.
 
