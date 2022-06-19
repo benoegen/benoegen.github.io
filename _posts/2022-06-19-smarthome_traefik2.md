@@ -16,6 +16,9 @@ Die einzelnen Abschnitte sind dabei:
 
 Als Vorarbeit für Home assistant und auch bitwarden macht eine Erreichbarkeit von außerhalb des lokalen Netzwerkes Sinn. Dieses lässt sich über Port Freigaben und besser noch über einen Reverse proxy realisieren. Bei mir kommt dafür traefik in der Version 2 zum Einsatz, die Domain von extern wird von duckdns (kostenlos) bereit gestellt. Dabei muss der Router so konfiguriert sein, dass er seine IP an duckdns liefert (dyndns). Die Ports 80 und 443 müssen auf die IP vom Raspberry Pi verweisen.
 
+
+[![traefik](/assets/screenshots/traefik.png){:class="img-responsive"}](/assets/screenshots/traefik.png)
+
 Zuerst müssen Ordner und Dateien erstellt werden
 
 ```
@@ -31,6 +34,7 @@ htpasswd installieren, dieses Tool wird zur Erstellung der Zugangsdaten benötig
 sudo apt-get update
 sudo apt-get install apache2-utils
 ```
+<!--mehr-->
 
 Die docker-compose file (muss bei XXX entsprechend abgeändert werden):
 
