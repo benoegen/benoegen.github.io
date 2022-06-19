@@ -131,13 +131,13 @@ http:
 ```
 Wenn das alles gepasst hat, dann sollte nach ausführen von `docker-compose up -d` die Weboberfläche von Traefik erreichbar sein.
 
+Quellen:
+
 https://community.home-assistant.io/t/add-ha-supervised-on-server-with-traefik-letsencryt-and-multiple-existing-services/280392
 
 https://www.reddit.com/r/docker/comments/d0z61s/traefikletsencrypt_with_duckdns/
 
 https://www.alexhyett.com/traefik-vs-nginx-docker-raspberry-pi#docker-networks
-
-https://flows.nodered.org/flow/93502a32dd44e0bee0d602877904ad93
 
 https://goneuland.de/traefik-v2-https-verschluesselung-sicherheit-verbessern/
 
