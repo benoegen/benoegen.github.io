@@ -14,7 +14,7 @@ Die einzelnen Abschnitte sind dabei:
 
 ### Einsatzzweck von Traefik
 
-Als Vorarbeit für Home assistant und auch bitwarden macht eine Erreichbarkeit von außerhalb des lokalen Netzwerkes Sinn. Dieses lässt sich über Port Freigaben und besser noch über einen Reverse proxy realisieren. Bei mir kommt dafür traefik in der Version 2 zum Einsatz, die Domain von extern wird von duckdns bereit gestellt. Dabei muss der Router so konfiguriert sein, dass er seine IP an duckdns liefert (dyndns). Die Ports 80 und 443 müssen auf die IP vom Raspberry Pi verweisen.
+Als Vorarbeit für Home assistant und auch bitwarden macht eine Erreichbarkeit von außerhalb des lokalen Netzwerkes Sinn. Dieses lässt sich über Port Freigaben und besser noch über einen Reverse proxy realisieren. Bei mir kommt dafür traefik in der Version 2 zum Einsatz, die Domain von extern wird von duckdns (kostenlos) bereit gestellt. Dabei muss der Router so konfiguriert sein, dass er seine IP an duckdns liefert (dyndns). Die Ports 80 und 443 müssen auf die IP vom Raspberry Pi verweisen.
 
 Zuerst müssen Ordner und Dateien erstellt werden
 
@@ -25,7 +25,7 @@ sudo touch /opt/containers/traefik/data/acme.json
 sudo chmod 600 /opt/containers/traefik/data/acme.json
 ```
 
-htpasswd installieren:
+htpasswd installieren, dieses Tool wird zur Erstellung der Zugangsdaten benötigt:
 
 ```
 sudo apt-get update
@@ -71,7 +71,6 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
-#      - /opt/containers/traefik/data/traefik.yml:/traefik.yml:ro
       - /opt/containers/traefik/data/acme.json:/acme.json
       - /opt/containers/traefik/data/dynamic_conf.yml:/dynamic_conf.yml
     labels:
@@ -79,7 +78,7 @@ services:
       - "traefik.http.routers.dashboard.rule=Host(`traefik.XXX.duckdns.org`)"
       - "traefik.http.routers.dashboard.service=api@internal"
       - "traefik.http.routers.dashboard.middlewares=auth"
-      - "traefik.http.middlewares.auth.basicauth.users=matze:$$apr1$$Tw9OoOwF$$Eri.2ywfCCgKQmICClafL0"
+      - "traefik.http.middlewares.auth.basicauth.users=USER:PASSWORT_HT"
       - "providers.file.filename=/dynamic_conf.yml"
     extra_hosts:
       - host.docker.internal:172.17.0.1
@@ -87,13 +86,15 @@ services:
 
 Nutzer und Passwort anlegen für die compose Datei:
 
-`echo $(htpasswd -nb matze MPwY498Cw9) | sed -e s/\\$/\\$\\$/g`
+`echo $(htpasswd -nb USER PASSWORT) | sed -e s/\\$/\\$\\$/g`
 
-Ausgabe in compose einfügen.
+Ausgabe in compose (USER:HTPSSWORT_HT) einfügen.
 
 Das externe Docker Netzwerk anlegen:
 
 `docker network create proxy`
+
+Eine weitere Datei muss erstellt werden, die die Parameter für https/Verschlüsselung anpasst:
 
 `nano /opt/containers/traefik/data/dynamic_conf.yml`
 
@@ -128,6 +129,7 @@ http:
         customFrameOptionsValue: "SAMEORIGIN"
 
 ```
+Wenn das alles gepasst hat, dann sollte nach ausführen von `docker-compose up -d` die Weboberfläche von Traefik erreichbar sein.
 
 https://community.home-assistant.io/t/add-ha-supervised-on-server-with-traefik-letsencryt-and-multiple-existing-services/280392
 
