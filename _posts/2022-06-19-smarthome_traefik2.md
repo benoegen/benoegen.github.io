@@ -9,12 +9,13 @@ Die einzelnen Abschnitte sind dabei:
 
   - Grundlagen und Portainer
   - DNS-Filter und DHCP mit Pihole
-  - von außen über domain bei duckdns erreichbares Smarthome mit traefik, homeassistant, zigbee2mqtt, mariadb, node-red
+  - von außen über domain bei duckdns erreichbar mit traefik,
+  - Homeassistant, zigbee2mqtt, mariadb, node-red
   - Passwortmanager mit bitwarden
 
 ### Einsatzzweck von Traefik
 
-Als Vorarbeit für Home assistant und auch bitwarden macht eine Erreichbarkeit von außerhalb des lokalen Netzwerkes Sinn. Dieses lässt sich über Port Freigaben und besser noch über einen Reverse proxy realisieren. Bei mir kommt dafür traefik in der Version 2 zum Einsatz, die Domain von extern wird von duckdns (kostenlos) bereit gestellt. Dabei muss der Router so konfiguriert sein, dass er seine IP an duckdns liefert (dyndns). Die Ports 80 und 443 müssen auf die IP vom Raspberry Pi verweisen.
+Als Vorarbeit für Homeassistant und auch bitwarden macht eine Erreichbarkeit von außerhalb des lokalen Netzwerkes Sinn. Das lässt sich über Port Freigaben und besser noch über einen Reverse proxy realisieren. Bei mir kommt dafür traefik in der Version 2 zum Einsatz, die Domain von extern wird von duckdns (kostenlos) bereit gestellt. Dabei muss der Router so konfiguriert sein, dass er seine IP an duckdns liefert (dyndns). Die Ports 80 und 443 müssen auf die IP vom Raspberry Pi verweisen.
 
 
 [![traefik](/assets/screenshots/traefik.png){:class="img-responsive"}](/assets/screenshots/traefik.png)
