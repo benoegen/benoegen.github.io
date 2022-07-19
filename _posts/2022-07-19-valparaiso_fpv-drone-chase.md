@@ -1,5 +1,5 @@
 ---
-title: Vaparaiso FPV Drone Shot
+title: Valparaiso FPV Drone Shot
 author: benoegen
 tag: skate
 layout: post
