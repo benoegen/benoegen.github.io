@@ -1,7 +1,7 @@
 ---
-title: Indonesia mit der Drohne
+title: Indonesien mit der Drohne
 author: benoegen
-tag: skate
+tag: video
 layout: post
 ---
 {% include youtube.html id='qTAK-NYFciA' %}
