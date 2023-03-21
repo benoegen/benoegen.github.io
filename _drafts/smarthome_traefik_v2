@@ -1,0 +1,36 @@
+---
+title: Smarthome auf RaspberryPi - Traefik2
+author: benoegen
+tag: it
+---
+Als Hilfe für andere und auch als Gedankenstütze für mich selber möchte ich dokumentieren, wie man ein Smarthome in homeassistant mit weiteren features auf einem RaspberryPi mittels docker-compose aufsetzt.
+
+Die einzelnen Abschnitte sind dabei:
+
+  - Grundlagen und Portainer
+  - DNS-Filter und DHCP mit Pihole
+  - von außen über domain bei duckdns erreichbares Smarthome mit traefik, homeassistant, zigbee2mqtt, mariadb, node-red
+  - Passwortmanager mit bitwarden
+
+### Update
+
+Inzwischen bin ich von Bitwarden zurück zu keepass xc, weil mir es irgendwie suspekt war, meine Passwörter so "angreifbar" im Internet liegen zu haben. Schließlich habe ich außer einem login keine weiteren Sicherheitsmaßnahmen ergriffen. 
+Es gibt aber die Möglichkeit, Logins von verdächtigen Ips zu unterbinden, mittels crowdsec und einem sogenannten Bouncer. Ich möchte dafür dem Tutorial von Goneuland folgen. Dafür muss aber die Konfiguration von Traefik etwas umgebaut werden, die Einstellungen sollen in Zukunft nicht mehr in der docker-compose Datei, sondern in einer traefik.yml vorgenommen werden, die aber weiterhin den use case mit duckdns als Domain-Provider abbildet.
+
+Durch einen Serverumzug liegen meine Container nicht mehr unter /opt/containers, sondern unter /home/containers ab. 
+
+
+
+Quellen:
+
+https://community.home-assistant.io/t/add-ha-supervised-on-server-with-traefik-letsencryt-and-multiple-existing-services/280392
+
+https://www.reddit.com/r/docker/comments/d0z61s/traefikletsencrypt_with_duckdns/
+
+https://www.alexhyett.com/traefik-vs-nginx-docker-raspberry-pi#docker-networks
+
+https://goneuland.de/traefik-v2-https-verschluesselung-sicherheit-verbessern/
+
+https://teddit.net/r/docker/comments/p82vgr/traefik_with_lets_encrypt_using_duckdns_domain/
+
+https://doc.traefik.io/traefik/https/acme/#configuration-examples
