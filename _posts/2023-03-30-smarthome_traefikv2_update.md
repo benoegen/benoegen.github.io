@@ -7,8 +7,7 @@ Als Hilfe für andere und auch als Gedankenstütze für mich selber möchte ich 
 
 ### Mehr Sicherheit mit crowdsec
 
-Update zu meinem [Traefik setup]({% post_url 2022-06-19-smarthome_traefik2 %}) 
-Um weiterhin Bitwarden guten Gewissens verwenden zu können, soll mein Server abgesicherte werden. Dazu gibt es die Möglichkeit, Logins von verdächtigen Ips zu unterbinden, mittels crowdsec und einem sogenannten Bouncer. Ich möchte dafür dem [Tutorial von Goneuland](https://goneuland.de/traefik-v2-reverse-proxy-mit-crowdsec-einrichten/) folgen. Dafür muss aber die Konfiguration von Traefik etwas umgebaut werden, die Einstellungen sollen in Zukunft nicht mehr in der docker-compose Datei, sondern in einer traefik.yml vorgenommen werden (es geht nur entweder oder) , die aber weiterhin den use case mit duckdns als Domain-Provider abbildet. 
+Update zu meinem [Traefik setup]({% post_url 2022-06-19-smarthome_traefik2 %}): Um weiterhin Bitwarden guten Gewissens verwenden zu können, soll mein Server abgesicherte werden. Dazu gibt es die Möglichkeit, Logins von verdächtigen Ips zu unterbinden, mittels crowdsec und einem sogenannten Bouncer. Ich möchte dafür dem [Tutorial von Goneuland](https://goneuland.de/traefik-v2-reverse-proxy-mit-crowdsec-einrichten/) folgen. Dafür muss aber die Konfiguration von Traefik etwas umgebaut werden, die Einstellungen sollen in Zukunft nicht mehr in der docker-compose Datei, sondern in einer traefik.yml vorgenommen werden (es geht nur entweder oder) , die aber weiterhin den use case mit duckdns als Domain-Provider abbildet. 
 Durch einen Serverumzug liegen meine Container nicht mehr unter /opt/containers, sondern unter /home/containers ab.
 
 <!--mehr-->

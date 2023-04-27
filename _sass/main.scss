@@ -167,12 +167,54 @@ h3{
   color: black;
 }
 
+a:link.post-title{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited.post-title{
+  text-decoration: none;
+  color: black;
+}
+
 code{
   background-color: #e6e6e6;
 }
 
 .highlighter-rouge{
   background-color: #e6e6e6;
+}
+
+a:link{
+  text-decoration: underline;
+  color: #5c5c5c;
+}
+
+p a:link{
+  text-decoration: none;
+  color: #0fa2db;
+}
+
+p a:visited{
+  text-decoration: none;
+  color: #5c5c5c;
+}
+
+p a:hover{
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #0fa2db;
+}
+
+
+a:visited{
+  text-decoration: underline;
+  color: #5c5c5c;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #979797;
 }
 
 a.website-title{
@@ -300,17 +342,18 @@ nav a:hover{
 
 a.readmore {
   text-decoration: none;
-  color: #5c5c5c;
+  font-style: italic;
+  color: #0fa2db;
   font-size: 1rem;
 }
 
 a.readmore:visited{
   text-decoration: none;
-  color: #5c5c5c;
+  color: #0fa2db;
 }
 
 a.readmore:hover{
-  text-decoration: underline;
+  text-decoration: none;
   color: #979797;
 }
 
