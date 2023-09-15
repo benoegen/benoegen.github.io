@@ -49,7 +49,7 @@ services:
       - host.docker.internal:172.17.0.1
 ```
 
-Die traefik.yml sieht so aus und ersetzt damit alle Konfugurationsflags, die vorher in der deocker-compose standen:
+Die traefik.yml sieht so aus und ersetzt damit alle Konfigurationsflags, die vorher in der docker-compose standen:
 
 ```
 api:
@@ -175,7 +175,7 @@ Was dort nicht beschrieben ist, dass man den bouncer am Ende testen kann, indem 
 Anschließend setzt man sich mit dem Befehl
 
 ```
-docker exec crowdsec-example cscli decisions add --ip 192.168.128.1
+docker exec crowdsec-example cscli decisions add --ip xxx.xxx.xxx.xxx
 ```
 
 auf die Blockliste. Beim aufrufen der Dienste über traefik müsste nun bei korrekter Konfiguration *forbidden* angezeigt werden. 
@@ -183,7 +183,7 @@ auf die Blockliste. Beim aufrufen der Dienste über traefik müsste nun bei korr
 Anschließend nimmt man sich selber mit
 
 ```
-docker exec crowdsec-example cscli decisions delete --ip 192.168.128.1
+docker exec crowdsec-example cscli decisions delete --ip xxx.xxx.xxx.xxx
 ```
 
 wieder von der Blockliste.
