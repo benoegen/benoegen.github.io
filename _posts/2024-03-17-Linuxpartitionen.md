@@ -13,7 +13,9 @@ Windows liegt auf sdb, Linux auf sdc.
 
 
 200 MB Fat32 /Boot/EFI flag:boot
+
 1gb ext4 /Boot
+
 Rest Btrfs /
 
 
