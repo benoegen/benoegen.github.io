@@ -9,9 +9,6 @@ Ziel ist ein Dual Boot System, da ich noch mindestens ein Spiel weiterhin spiele
 Getestet habe ich die Distros Endeavor (läuft bereits problemlos auf dem laptop zum surfen), Nobara und Garuda. Für den Hauptrechner wollte ich etwas mehr vorselektiertes, gerne mit mehr GUI als das "terminal-centric" Endeavor.
 Nobara lief zunächst gut, der Wechsel auf Garuda hat dann im Bereich der EFI was zerstört, so dass es in den genannten Neuinstallationen endete. Letztendlich habe ich manuell partitioniert und zwar wie folgt:
 
-Windows liegt auf sdb, Linux auf sdc.
-
-
 200 MB Fat32 /Boot/EFI flag:boot
 
 1gb ext4 /Boot
